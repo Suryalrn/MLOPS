@@ -1,0 +1,93 @@
+# ────────────────────────────────────────────────────────────────────
+#  .gitignore — SCSE3040 Machine Learning Operations Lab
+#  Surya Varshney · S24CSEU0573 · Bennett University · 2026-27
+# ────────────────────────────────────────────────────────────────────
+
+# ── Virtual environments ─────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── Python bytecode & caches ─────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── Jupyter Notebook checkpoints ─────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ── pytest cache & coverage ──────────────────────────────────────────
+.pytest_cache/
+*/.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# ── MLflow tracking stores ───────────────────────────────────────────
+# Keep mlruns/ structure but ignore the heavy artifact blobs
+mlruns/
+mlartifacts/
+# Ignore SQLite databases (can be large)
+*.db
+*.sqlite
+*.sqlite3
+
+# ── scikit-learn / model artifacts ───────────────────────────────────
+*.pkl
+*.pickle
+*.joblib
+*.skops
+
+# ── OS-generated files ───────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ── VS Code / IDE ────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user
+
+# ── Build / distribution ─────────────────────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+site/
+wheels/
+
+# ── Environment / secrets ────────────────────────────────────────────
+.env
+.env.*
+*.key
+secrets.yaml
+secrets.yml
+
+# ── Logs ─────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Data files (large; track with Git LFS if needed) ─────────────────
+# Uncomment the line below if you do NOT want to commit the dataset
+# data/*.csv
+
+# ── Submission files (personal, not for GitHub) ──────────────────────
+*_submission.html
+*_submission.pdf
+pytest_screenshot.png
+*.pdf
+
+# ── mypy / type-check cache ──────────────────────────────────────────
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ── Ruff / linting cache ─────────────────────────────────────────────
+.ruff_cache/
