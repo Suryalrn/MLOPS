@@ -83,6 +83,7 @@ logs/
 *_submission.pdf
 pytest_screenshot.png
 *.pdf
+*.zip
 
 # ── mypy / type-check cache ──────────────────────────────────────────
 .mypy_cache/
